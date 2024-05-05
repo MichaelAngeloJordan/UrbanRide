@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Use viewport height for full-screen height */
+  margin-top: 3rem;
+}
+
+.details {
+  width: 25rem;
+  text-align: center; /* Center text content within .details */
+}
+
+.error-list{
+  color: rgb(0, 0, 0);
+}
+.register-button {
+  color: white;
+  margin: 0 auto; /* Center the button horizontally */
+  background-color: #28a745; /* Change button color here */
+  padding: 0.77rem 1rem; /* Optional: Adjust padding if needed */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 10rem; /* Adjust width as needed */
+}
+
+.register-button:hover {
+  background-color: #218838; /* Change button color on hover if desired */
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

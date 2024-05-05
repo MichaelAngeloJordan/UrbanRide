@@ -1,0 +1,42 @@
+<app-search></app-search>
+<app-tags></app-tags>
+<app-not-found
+[visible]="!cars || !cars.length"
+resetLinkText="Refresh!">
+</app-not-found>
+<ul>
+  <li *ngFor="let car of cars">
+    <a routerLink="/car/{{car.id}}">
+      <img [src]="car.imageUrl" [alt]="car.name" />
+      <div class="content">
+        <div class="name">
+          {{car.name}}
+        </div>
+        <span class="favorite {{car.favorite?'':'not'}}">
+          ❤
+        </span>
+        <div class="stars">
+          <star-rating [stars]="car.stars" />
+        </div>
+        <div class="product-item-footer">
+          <div class="origins">
+            <span *ngFor="let origin of car.origins">
+              {{origin}}
+            </span>
+          </div>
+
+          <div class="cook-time">
+            <span>🕒</span>
+            {{car.cookTime}}
+          </div>
+        </div>
+
+        <div class="price">
+          <span>
+            {{car.price | currency}}
+          </span>
+        </div>
+      </div>
+    </a>
+  </li>
+</ul>

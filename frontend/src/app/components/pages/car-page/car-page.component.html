@@ -1,0 +1,47 @@
+<app-not-found
+  [visible]="!car"
+  notFoundMessage="Rental Not Found"
+  resetLinkText="Back To Homepage">
+</app-not-found>
+<div *ngIf="car" class="container">
+  <img [src]="car.imageUrl" [alt]="car.name"/>
+
+  <div class="details">
+    <div class="header">
+      <span class="name">
+        {{car.name}}
+      </span>
+      <span class="favorite {{car.favorite? '': 'not'}}">❤</span>
+    </div>
+    <div class="rating">
+      <star-rating [stars]="car.stars" [size]="1.8" />
+    </div>
+
+    <div class="origins">
+      <span *ngFor="let origin of car.origins">
+        {{origin}}
+      </span>
+    </div>
+
+    <div class="tags">
+      <a *ngFor="let tag of car.tags" routerLink="/tag/{{tag}}">
+        {{tag}}
+      </a>
+    </div>
+
+    <div class="cook-time">
+      <span>
+        Rent Time <strong>{{car.cookTime}}</strong> minutes
+      </span>
+    </div>
+
+    <div class="price">
+      <span>
+        {{car.price | currency}}
+      </span>
+    </div>
+
+    <button (click)="addToCart()">Add To Cart</button>
+
+  </div>
+</div>

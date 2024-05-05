@@ -1,0 +1,41 @@
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+margin-top: 3rem;
+}
+
+.details{
+  width: 28rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.error-list{
+  color: rgb(0, 0, 0);
+}
+.login-button {
+  color: white;
+  background-color: #09b5ff; /* Change button color here */
+  padding: 0.77rem 1rem; /* Optional: Adjust padding if needed */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 10rem; /* Adjust width as needed */
+  margin: 0 auto; /* Center the button horizontally */
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Change button color on hover if desired */
+}
+
+.register{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
