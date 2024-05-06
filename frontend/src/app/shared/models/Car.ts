@@ -7,5 +7,5 @@ export class Car{
   stars!: number;
   imageUrl!: string;
   origins!: string[];
-  cookTime!:string;
+  rentTime!:string;
 }

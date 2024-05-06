@@ -1,4 +1,4 @@
-Kelompok
+Kelompok:
 Michael Angelo - NIM 535220246
 Kimberly - NIM 535220250
 Chalvinth - NIM 535220200

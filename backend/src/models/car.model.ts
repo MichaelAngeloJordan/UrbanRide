@@ -9,7 +9,7 @@ export interface Car{
     stars: number;
     imageUrl: string;
     origins: string[];
-    cookTime:string;
+    rentTime:string;
 }
 
 export const CarSchema = new Schema<Car>(
@@ -21,7 +21,7 @@ export const CarSchema = new Schema<Car>(
         stars: {type: Number, required:true},
         imageUrl: {type: String, required:true},
         origins: {type: [String], required:true},
-        cookTime: {type: String, required:true}
+        rentTime: {type: String, required:true}
     },{
         toJSON:{
             virtuals: true

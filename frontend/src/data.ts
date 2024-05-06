@@ -5,7 +5,7 @@ export const sample_cars: Car[] = [
   {
     id:'1',
     name: 'Alhart',
-    cookTime: '1',
+    rentTime: '1',
     price: 10,
     favorite: false,
     origins: ['Indonesia'],
